@@ -1,0 +1,57 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "palette": {
+    "os": "#ACB0BE",
+    "closer": "p:os",
+    "pink": "#F4B8E4",
+    "lavender": "#a15af4",
+    "blue": "#31a9ff",
+    "green": "#50FA7B",
+    "cyan": "#8BE9FD",
+    "orange": "#ff714b",
+    "yellow": "#ffb635",
+    "red": "#ff4783"
+  },
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "p:blue",
+          "style": "plain",
+          "template": "<p:green>></> ",
+          "type": "text"
+        },
+        {
+          "foreground": "p:blue",
+          "properties": {
+            "home_icon": "~",
+            "style": "folder"
+          },
+          "style": "plain",
+          "template": "{{ .Path }}",
+          "type": "path"
+        },
+        {
+          "foreground": "p:red",
+          "properties": {
+            "branch_icon": "",
+            "fetch_status": false
+          },
+          "style": "plain",
+          "template": " <p:cyan>⚡</><p:lavender>git:(</>{{ .HEAD }}<p:lavender>)</>",
+          "type": "git"
+        },
+        {
+          "style": "plain",
+          "foreground": "p:closer",
+          "template": "",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 2
+}
