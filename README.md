@@ -1,1 +1,1 @@
-# My cools themes for windows terminal using oh-my-posh!
+# My super cool themes for windows terminal using oh-my-posh!
